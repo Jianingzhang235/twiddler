@@ -1,6 +1,34 @@
+
+* {
+  margin: 0 auto;
+}
+.btn {
+  dispay:inline-block;
+  margin: 0 auto;
+}
+
+
+.container {
+  /*set border for container*/
+  
+  display: flex;
+  width: 510px;
+  height: auto;
+  flex-wrap: wrap;
+  margin-left:auto;  
+  margin-right:auto; 
+  padding:5px;        
+  border:5px solid gray;
+  /*float: left*/       
+}
+
+
+
 .main-div {
+  background-color: pink;
 	width:500px;
 	height:500px;
+  
 }
 
 
