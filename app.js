@@ -30,13 +30,18 @@ $(document).ready(function(){
         $tweet.prependTo($tweetList);
         index ++;
       }
-   const date = $('span.timeline')
+  
+    });
+
+     const date = $('span.timeline')
       for (let i = date.length - 1; i >= 0; i--) {
         let inverse = date.length;
         $(date[i]).text(moment(streams.home[(inverse-1-i)].created_at).fromNow())
       }
-      console.log(date)
-    });
+   
+
+
+
  });
 
     
@@ -51,5 +56,5 @@ $(document).ready(function(){
 
   });
 
-});
+
 
