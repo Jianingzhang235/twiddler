@@ -30,31 +30,26 @@ $(document).ready(function(){
         $tweet.prependTo($tweetList);
         index ++;
       }
-
-  });
-
-     // console.log($tweet);
-
-
-const date = $('span.timeline')
+   const date = $('span.timeline')
       for (let i = date.length - 1; i >= 0; i--) {
         let inverse = date.length;
         $(date[i]).text(moment(streams.home[(inverse-1-i)].created_at).fromNow())
       }
-  });
+      console.log(date)
+    });
+ });
 
-     
+    
+
 
 
   $(document).on('click', 'div.usersAndText span', function(){
-    // var $timeline = $('.timeline');
-    //   $timeline.html('');
-      // console.log( name, $(this).text());
+    
   
       var userTexts = $(this).text();
       $(`li:not(:contains(${userTexts}))`).hide();
-      // if($('ul' )hide()''
-// 
 
   });
+
+});
 
