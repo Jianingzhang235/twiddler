@@ -1,4 +1,8 @@
 $(document).ready(function(){
+
+  const momentTime = function() {
+    return moment().fromNow()
+  }
   
   $('.btn').on('click', function(){
     // var $maindiv = $('.main-div');
@@ -30,6 +34,18 @@ $(document).ready(function(){
   });
 
      // console.log($tweet);
+
+
+const date = $('span.timeline')
+      for (let i = date.length - 1; i >= 0; i--) {
+        let inverse = date.length;
+        $(date[i]).text(moment(streams.home[(inverse-1-i)].created_at).fromNow())
+      }
+  });
+
+     
+
+
   $(document).on('click', 'div.usersAndText span', function(){
     // var $timeline = $('.timeline');
     //   $timeline.html('');
@@ -42,17 +58,3 @@ $(document).ready(function(){
 
   });
 
-});
-   // const $tweet = $('<div></div>');
-   //  //       let button = $('<button></button>'); 
-   //  //         button.text(${tweet.user}) 
-    //         $tweet.text(tweet.user + ': ' + tweet.message + ' ' +  timestamp);
-    //         button.prependTo($maindiv)
-    //         $tweet.prependTo($maindiv);
-    //       index ++;
-
-      //     const $tweet = $('<div></div>');
-      // const $user1 =$('<div><span>${tweet.user}</span><div>');
-      //       $tweet.text('@' + $user1 + ': ' + tweet.message + ' ' +  timestamp);
-      //       $tweet.prependTo($maindiv);
-      //     index ++;
